@@ -1,0 +1,281 @@
+$secondary-font: "Montserrat";
+.pokemon-details {
+  height: 100vh;
+  padding: 1rem 1.5rem;
+  .list-row {
+    margin-bottom: 1rem !important;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      img {
+        // width: 70%;
+        // // height: 20%;
+      }
+    }
+    .details-container {
+      h2 {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .species {
+        font-size: 0.95rem;
+        font-weight: 600;
+        span {
+          text-transform: capitalize;
+          color: #12c77b;
+          background-color: #cfffec;
+          font-weight: 700;
+          font-size: 0.7rem;
+          padding: 0.2rem 0.5rem;
+          text-transform: capitalize;
+          margin-left: 0.5rem;
+        }
+      }
+      .abilities {
+        font-size: 0.95rem;
+        font-weight: 600;
+        span {
+          color: #275bf8;
+          background-color: #275bf82d;
+          font-weight: 700;
+          font-size: 0.7rem;
+          padding: 0.2rem 0.5rem;
+          text-transform: capitalize;
+          margin-left: 0.5rem;
+        }
+      }
+      .types {
+        font-size: 0.95rem;
+        font-weight: 600;
+        span {
+          color: #c71272;
+          background-color: #facee5;
+          font-weight: 700;
+          font-size: 0.7rem;
+          padding: 0.2rem 0.5rem;
+          text-transform: capitalize;
+          margin-left: 0.5rem;
+        }
+      }
+
+      .stats-wrapper {
+        display: flex;
+        .stats-box {
+          background-color: #e9e9e9;
+          font-size: 0.8rem;
+          display: flex;
+          font-weight: 600;
+          flex-direction: column;
+          margin-right: 0.7rem;
+          padding: 0.5rem 1rem;
+          span {
+            font-family: $secondary-font;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .details-heading {
+    margin-bottom: 1rem;
+    .all-listing {
+      padding: 1rem;
+      padding-left: 0rem;
+      display: flex;
+      justify-content: left;
+      border-bottom: 2px solid rgb(235, 235, 235);
+      .pole {
+        padding: 0.4rem;
+        border-radius: 3px;
+        background-color: #99b0fd;
+      }
+      .heading {
+        font-size: large;
+        font-weight: 700;
+        padding-right: 7.5rem;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .base-stats {
+    .all-listing {
+      padding: 1rem;
+      padding-left: 0rem;
+      display: flex;
+      justify-content: left;
+      //   border-bottom: 2px solid rgb(235, 235, 235);
+      .pole {
+        padding: 0.4rem;
+        border-radius: 3px;
+        background-color: #99b0fd;
+      }
+      .heading {
+        font-size: large;
+        font-weight: 700;
+        padding-right: 7.5rem;
+        padding-left: 1rem;
+      }
+    }
+    .stats-listing {
+      .stats-wrapper {
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        margin-bottom: 0.7rem !important;
+        .img-div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0rem;
+          img {
+            width: 55%;
+            border-radius: 100%;
+          }
+        }
+        .title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0rem;
+          p {
+            font-weight: 600;
+            color: rgb(152, 152, 152);
+            margin-bottom: 0rem;
+            font-size: 0.6rem;
+          }
+          span {
+            font-size: 0.9rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+          }
+          progress {
+            border-radius: 7px;
+            width: 70%;
+            height: 0.15rem;
+          }
+          progress::-webkit-progress-bar {
+            background-color: #ebe0fb;
+            border-radius: 7px;
+          }
+          progress::-webkit-progress-value {
+            background-color: #905fc4;
+            border-radius: 7px;
+          }
+        }
+        .up-arrow {
+          padding: 0rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            font-family: $secondary-font;
+            margin: 0rem;
+            border-radius: 5px;
+            color: #905fc4;
+            background-color: #ebe0fb;
+            font-size: small;
+            font-weight: 600;
+            padding: 0.3rem 0.5rem;
+          }
+        }
+      }
+
+      .stats-wrapper:nth-child(1) {
+        background-color: #fdf7e3;
+        progress::-webkit-progress-bar {
+          background-color: #f3e1ac;
+        }
+        progress::-webkit-progress-value {
+          background-color: #dcb54a;
+        }
+        .up-arrow {
+          span {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background-color: #f4e7bf;
+            color: #dcb54a;
+            i {
+              padding-right: 0.3rem;
+            }
+          }
+        }
+      }
+      .stats-wrapper:nth-child(4) {
+        background-color: #f3fbff;
+        progress::-webkit-progress-bar {
+          background-color: #d3eeff;
+        }
+        progress::-webkit-progress-value {
+          background-color: #53a0cc;
+        }
+        .up-arrow {
+          span {
+            background-color: #d3eeff;
+            color: #53a0cc;
+          }
+        }
+      }
+      .stats-wrapper:nth-child(5) {
+        background-color: #f4f5fe;
+        progress::-webkit-progress-bar {
+          background-color: #dcdeff;
+        }
+        progress::-webkit-progress-value {
+          background-color: #7f80e4;
+        }
+        .up-arrow {
+          span {
+            background-color: #dcdeff;
+            color: #7f80e4;
+          }
+        }
+      }
+    }
+  }
+  .all-details {
+    font-weight: 600;
+    text-transform: capitalize;
+
+    .held-items {
+      div {
+        background-color: #e8d6fc;
+        margin-left: 1rem;
+        display: inline-block;
+        padding: 0.2rem 0.4rem;
+        img {
+          padding: 0rem;
+          margin-left: 0.4rem;
+          border-radius: 100px;
+          background-color: white;
+        }
+        span {
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: #6916c3;
+        }
+      }
+    }
+    .moves {
+      display: flex;
+
+      .moves-box {
+        font-size: 0.7rem;
+        span {
+          display: inline-flex;
+          font-weight: 700;
+          color: #1649f2;
+          padding: 0.3rem 0.5rem;
+          background-color: #bfcdfdac;
+          margin-left: 0.7rem;
+          margin-bottom: 0.25rem;
+        }
+      }
+    }
+  }
+}

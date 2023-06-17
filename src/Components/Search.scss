@@ -1,0 +1,46 @@
+.dashboard {
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    transition: all 0.5s;
+    .search-bar {
+      width: 40%;
+      font-size: 0.8rem;
+      font-weight: bold;
+      background-color: rgb(246, 246, 246);
+      border-radius: 100px;
+      padding: 0rem 1rem;
+      transition: all 0.5s;
+      i,
+      input {
+        // width: %;
+        padding: 0.7rem;
+        font-weight: 600;
+        background: transparent;
+        border: none;
+      }
+      input::placeholder {
+        color: rgb(187, 186, 186);
+      }
+      input:focus {
+        outline: none;
+      }
+      i {
+        color: rgb(187, 186, 186);
+      }
+    }
+  }
+  .header.active {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    .search-bar {
+      font-size: 1rem;
+      width: 55%;
+    }
+  }
+}

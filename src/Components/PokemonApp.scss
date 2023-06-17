@@ -1,0 +1,72 @@
+$base-color: #275bf8;
+
+.admin-panel {
+  height: 100vh;
+  font-family: "Raleway", sans-serif;
+  h4 {
+    padding: 2rem 0rem 0rem 0rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    span {
+      color: $base-color;
+    }
+  }
+  .nav-container {
+    height: 100%;
+    border-right: 2px solid rgb(237, 235, 235);
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .nav-container::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-wrapper {
+    margin: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: gray;
+    }
+    ul {
+      list-style: none;
+      padding: 0rem;
+      li {
+        padding: 0rem;
+        font-weight: 700;
+        a {
+          display: flex;
+          align-items: center;
+          color: rgb(146, 146, 146);
+          text-decoration: none;
+          padding: 0.7rem 0.8rem;
+          font-size: 0.85rem;
+          margin-bottom: 0.25rem;
+          transition: 0.5s all;
+          i {
+            padding-right: 0.8rem;
+          }
+        }
+        a.active {
+          background-color: $base-color;
+          color: #fff;
+          border-radius: 7px;
+          padding-left: 2rem;
+          box-shadow: rgba(29, 91, 248, 0.3) 0px 10px 15px -3px,
+            rgba(29, 91, 248, 0.6) 0px 4px 6px -2px;
+        }
+      }
+    }
+  }
+  .loading-content {
+    width: 83%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #5b5b5c9a;
+  }
+}
