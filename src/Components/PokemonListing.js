@@ -102,8 +102,11 @@ function PokemonListing() {
           pokemonsList?.map((d, i) => {
             return (
               <div className="col-md-2 list-col" key={"pokemon" + i}>
-                <Link to={"/pokemons/" + d?.name} className="list-container">
-                  <div className="img-container">
+                <Link
+                  to={"/pokemons/" + d?.name}
+                  className="list-container h-100"
+                >
+                  <div className="img-container ">
                     <img
                       src={
                         process.env.REACT_APP_SPRITES_BASE_URL +
